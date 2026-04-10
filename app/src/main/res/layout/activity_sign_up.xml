@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deep_space"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/usericon"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/orbitronbold"
+        android:shadowColor="#80000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="Create Account"
+        android:textColor="#E6FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="59sp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/glass_border"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Enter Name"
+        android:paddingVertical="4dp"
+        android:paddingStart="18dp"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="59sp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/glass_border"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Enter Username"
+        android:paddingVertical="4dp"
+        android:paddingStart="18dp"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="59sp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/glass_border"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Enter Password"
+        android:inputType="numberPassword"
+        android:paddingVertical="4dp"
+        android:paddingStart="18dp"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btn_gradient"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/montserratsemibold"
+        android:letterSpacing="0.1"
+        android:shadowColor="#00C6FF"
+        android:shadowRadius="8"
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
